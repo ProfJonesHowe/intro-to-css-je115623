@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jewelry Website</title>
+
+  <!-- Elegant fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="logo">Jewelry Website</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Figure -->
+    <figure class="hero">
+      <img src="https://share.google/images/oWGlp42vi0sQdoVW0" alt="Hero image of jewelry display" />
+      <figcaption>Beautiful handcrafted pieces designed by Jayda Ellis.</figcaption>
+    </figure>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Jayda Ellis</h2>
+      <p>
+        Welcome to my Jewelry Website! I’m Jayda Ellis, a jewelry designer who
+        creates minimal, everyday pieces meant to sparkle with elegance.
+        Each design is made with hypoallergenic materials and thoughtful detail,
+        combining classic style with modern beauty.
+      </p>
+    </section>
+
+    <!-- Gallery / Products -->
+    <section id="gallery">
+      <h2>Featured Pieces</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://share.google/images/lPXW7bIiy6kN06uzv" alt="Gold hoop earrings" />
+          <h3>Gold Hoop Earrings</h3>
+          <p class="price">$28</p>
+          <button onclick="document.getElementById('message').value='Inquiry: Gold Hoop Earrings'; document.getElementById('name').focus();">
+            Ask about this
+          </button>
+        </article>
+
+        <article class="card">
+          <img src="https://share.google/images/YKeiaS6Hul1uOiRLB" alt="Layered gold necklace" />
+          <h3>Layered Gold Necklace</h3>
+          <p class="price">$42</p>
+          <button onclick="document.getElementById('message').value='Inquiry: Layered Gold Necklace'; document.getElementById('name').focus();">
+            Ask about this
+          </button>
+        </article>
+
+        <article class="card">
+          <img src="https://share.google/images/EcN5G16SDks7mxrmX" alt="Silver ring set" />
+          <h3>Silver Ring Set</h3>
+          <p class="price">$36</p>
+          <button onclick="document.getElementById('message').value='Inquiry: Silver Ring Set'; document.getElementById('name').focus();">
+            Ask about this
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact / Order -->
+    <section id="contact">
+      <h2>Contact Jayda Ellis</h2>
+      <form action="mailto:jellis3@albany.edu" method="post" enctype="text/plain" class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" required placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option>Custom Order</option>
+          <option>Product Question</option>
+          <option>Repair/Resize</option>
+          <option>Wholesale</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell me what you need…" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Jewelry Website · Designed by Jayda Ellis · Contact: <a href="mai
+
